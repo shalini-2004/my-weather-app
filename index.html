@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1 class="head">Weather App</h1>
+        <div class="about">   
+            <a  href="./about.html" title="Click to discover the features..">About Us</a>
+        </div>  
+         
+    </header>
+    <main>
+        <div id="current-weather1">
+            <div class="c-w-d">
+                <input type="text" id="city-input" placeholder="Enter city name" value="">
+                <button id="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+            <div id="current-weather">
+                <!-- Current weather data will be displayed here -->
+                <p id="current-day-time"></p>
+            </div>
+            <hr class="hr">
+            <div class="location">
+                <i class="fa-solid fa-location-dot" style="color: #c20000;"></i><p id="loc" class="color">Location: Fetching...</p>
+            </div>
+        </div>
+        <div id="forecast1">
+            <!-- 7-day forecast and extra details will be displayed here -->
+            <label class="switch">
+                <input type="checkbox" id="temp-switch">
+                <span class="slider">
+                    <span class="label-fahrenheit">°F</span>
+                    <span class="label-celsius">°C</span>
+                     
+                </span>
+            </label>
+
+            
+            <h3 class="color">5-Day Forecast</h3> 
+
+            <div id="forecast">
+                <!-- 5-day forecast will be displayed here -->
+            </div>
+            <h3 class="color">Today's Highlights</h3>
+            <div id="extra">
+
+
+
+
+
+
+                 
+                <!-- Additional details will be displayed here -->
+            </div>
+        </div>
+    </main>
+     
+
+    <script src="script.js"></script>
+    <!-- <script src="new.js"></script> -->
+</body>
+</html>
